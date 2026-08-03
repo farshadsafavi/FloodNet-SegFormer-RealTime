@@ -1,4 +1,4 @@
-# FloodNet SegFormer: Real-Time and Edge-Efficient Flood Scene Segmentation
+# FloodNet SegFormer: Real-Time and Efficient Flood Scene Segmentation on Edge Device
 
 [![Paper](https://img.shields.io/badge/IEEE%20JSTARS-Paper-00629B?logo=ieee)](https://doi.org/10.1109/JSTARS.2022.3219724)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
