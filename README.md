@@ -5,15 +5,13 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-SegFormer-FFD21E)](https://huggingface.co/docs/transformers/model_doc/segformer)
 
-A clean, reusable implementation of **SegFormer for semantic segmentation of post-flood UAV imagery**, based on experiments reported in:
+Implementation of **SegFormer for semantic segmentation of post-flood UAV imagery**, based on experiments reported in:
 
 > **Comparative Study of Real-Time Semantic Segmentation Networks in Aerial Images During Flooding Events**  
 > Farshad Safavi and Maryam Rahnemoonfar  
 > *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, vol. 16, pp. 15–31, 2023  
 > [Read the paper](https://doi.org/10.1109/JSTARS.2022.3219724) · [Citation](#citation)
-
-> [!NOTE]
-> This repository is a **cleaned reimplementation** derived from the original experimental notebooks. It is not an archival copy of the exact environment used to generate the published results.
+> 
 
 ## Real-time segmentation demo
 
@@ -79,11 +77,6 @@ The following test-set result was reported in the 2023 paper. It is provided as 
 |---|---:|---:|
 | **SegFormer-B0** | **61.6%** | **89.5%** |
 
-### Qualitative comparison
-
-![Qualitative comparison of FloodNet predictions from evaluated real-time models](assets/ResAll.png)
-
-The figure compares the ground truth with predictions from the real-time architectures evaluated in the paper. Refer to the [published article](https://doi.org/10.1109/JSTARS.2022.3219724) for the complete experimental protocol, architecture comparison, and per-class results.
 
 ### Flood-scene example
 
