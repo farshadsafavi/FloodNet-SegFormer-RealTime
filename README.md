@@ -72,10 +72,11 @@ FloodNet/
 └── masks/
     ├── 0001_lab.png
     └── ...
+```
 
 ## Published benchmark
 
-The following test-set result was reported in the 2023 paper. It is provided as a reference benchmark and **is not presented as a newly reproduced result from this cleaned implementation**.
+The following test-set result was reported in the 2023 paper. It is provided as a reference benchmark and is not presented as a newly reproduced result from this cleaned implementation.
 
 | Model | Test mIoU | Pixel accuracy |
 |---|---:|---:|
