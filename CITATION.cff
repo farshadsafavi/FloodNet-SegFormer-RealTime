@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "FloodNet SegFormer Real-Time Segmentation"
+type: software
+authors:
+  - family-names: Safavi
+    given-names: Farshad
+repository-code: "https://github.com/farshadsafavi/FloodNet-SegFormer-RealTime"
+preferred-citation:
+  type: article
+  title: "Comparative Study of Real-Time Semantic Segmentation Networks in Aerial Images During Flooding Events"
+  authors:
+    - family-names: Safavi
+      given-names: Farshad
+    - family-names: Rahnemoonfar
+      given-names: Maryam
+  journal: "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing"
+  year: 2023
+  doi: "10.1109/JSTARS.2022.3219724"
