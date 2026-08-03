@@ -5,30 +5,6 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-SegFormer-yellow)](https://huggingface.co/docs/transformers/model_doc/segformer)
 
-## Real-Time Flood Segmentation Demo
-
-<p align="center">
-  Side-by-side comparison of the original UAV footage and the corresponding SegFormer prediction.
-</p>
-
-<table>
-  <tr>
-    <th width="50%">Input UAV Footage</th>
-    <th width="50%">SegFormer Prediction</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="assets/mov.gif" width="100%" alt="Input UAV footage">
-    </td>
-    <td align="center">
-      <img src="assets/seg.gif" width="100%" alt="SegFormer prediction">
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <a href="assets/seg.mp4">▶ Watch the high-quality segmentation video</a>
-</p>
 
 A clean, reusable implementation of **SegFormer for semantic segmentation of post-flood UAV imagery**, based on the experiments reported in:
 
@@ -47,6 +23,31 @@ A clean, reusable implementation of **SegFormer for semantic segmentation of pos
 - Saves the dataset split, experiment configuration, metric history, and best Hugging Face checkpoint.
 - Provides a compact [quick-start notebook](segformer_quickstart.ipynb) for implementation and teaching.
 - Connects the code directly to the published real-time FloodNet benchmark.
+
+## Real-Time Flood Segmentation Demo
+
+<p align="center">
+  Side-by-side comparison of the original UAV footage and the corresponding SegFormer prediction.
+</p>
+
+<table>
+  <tr>
+    <th width="50%">Input UAV Footage</th>
+    <th width="50%">SegFormer Prediction</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="assets/mov.png" width="100%" alt="Input UAV footage">
+    </td>
+    <td align="center">
+      <img src="assets/seg.gif" width="100%" alt="Real-Time prediction">
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <a href="assets/seg.mp4">▶ Watch the high-quality segmentation video</a>
+</p>
 
 ## Study overview
 
