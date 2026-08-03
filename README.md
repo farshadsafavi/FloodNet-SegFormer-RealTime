@@ -177,4 +177,6 @@ This repository uses the FloodNet dataset and pretrained SegFormer backbones dis
 
 ## License
 
-No software license has been selected yet. Add a `LICENSE` file before encouraging redistribution or reuse of the code.
+The source code in this repository is available under the [MIT License](LICENSE).
+
+The FloodNet dataset, published paper, pretrained model weights, and third-party assets remain subject to their respective licenses and terms of use.
