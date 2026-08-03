@@ -37,7 +37,7 @@ The study evaluates real-time encoder-decoder and multi-pathway semantic-segment
 </p>
 
 <p align="center">
-  <img src="assets/segformer_comparison.gif"
+  <img src="assets/segformer_demo_optimized.gif"
        width="900"
        alt="Synchronized UAV footage and SegFormer prediction">
 </p>
@@ -45,7 +45,6 @@ The study evaluates real-time encoder-decoder and multi-pathway semantic-segment
 <p align="center">
   <a href="assets/seg.mp4">▶ Watch the high-quality segmentation video</a>
 </p>
-
 ## FloodNet dataset
 
 ![Representative FloodNet imagery and semantic labels](assets/floodnet_classes.png)
