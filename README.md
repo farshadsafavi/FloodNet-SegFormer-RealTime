@@ -11,7 +11,25 @@ Implementation of **SegFormer for semantic segmentation of post-flood UAV imager
 > Farshad Safavi and Maryam Rahnemoonfar  
 > *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, vol. 16, pp. 15–31, 2023  
 > [Read the paper](https://doi.org/10.1109/JSTARS.2022.3219724) · [Citation](#citation)
-> 
+>
+
+## Study overview
+
+<p align="center">
+  <img src="assets/Fig1.png"
+       width="850"
+       alt="Overview of real-time semantic segmentation for post-flood aerial imagery">
+</p>
+
+The study evaluates real-time encoder–decoder and multi-pathway semantic-segmentation architectures for rapid analysis of UAV imagery collected after flooding events.
+
+## Highlights
+
+- Supports **SegFormer-B0 through SegFormer-B5** using a single model option.
+- Provides training, validation, checkpointing, and dataset-level segmentation metrics.
+- Saves the dataset split, experiment configuration, metric history, and best Hugging Face checkpoint.
+- Includes a compact [quick-start notebook](segformer_quickstart.ipynb) for learning and adaptation.
+- Connects the implementation directly to the published real-time FloodNet benchmark.
 
 ## Real-time segmentation demo
 
@@ -28,20 +46,6 @@ Implementation of **SegFormer for semantic segmentation of post-flood UAV imager
 <p align="center">
   <a href="assets/seg.mp4">▶ Watch the full-quality segmentation video</a>
 </p>
-
-## Study overview
-
-![Overview of real-time semantic segmentation for post-flood aerial imagery](assets/Fig1.png)
-
-The study evaluates real-time encoder–decoder and multi-pathway semantic-segmentation architectures for rapid analysis of UAV imagery collected after flooding events.
-
-## Highlights
-
-- Supports **SegFormer-B0 through SegFormer-B5** using a single model option.
-- Provides training, validation, checkpointing, and dataset-level segmentation metrics.
-- Saves the dataset split, experiment configuration, metric history, and best Hugging Face checkpoint.
-- Includes a compact [quick-start notebook](segformer_quickstart.ipynb) for learning and adaptation.
-- Connects the implementation directly to the published real-time FloodNet benchmark.
 
 ## FloodNet dataset
 
@@ -170,7 +174,11 @@ The U-Net models with MobileNetV2 and MobileNetV3 encoders evaluated in this stu
 
 ## Acknowledgments
 
-This repository uses the FloodNet dataset and pretrained SegFormer backbones distributed through the Hugging Face Transformers ecosystem. Please cite the original dataset and model publications when appropriate.
+This repository uses the **FloodNet dataset**. Please cite the original FloodNet publication when using the dataset:
+
+> M. Rahnemoonfar, T. Chowdhury, A. Sarkar, D. Varshney, M. Yari, and R. R. Murphy, “FloodNet: A High Resolution Aerial Imagery Dataset for Post Flood Scene Understanding,” *IEEE Access*, vol. 9, pp. 89644–89654, 2021. https://doi.org/10.1109/ACCESS.2021.3090981
+
+The dataset and usage instructions are available from the [official FloodNet repository](https://github.com/BinaLab/FloodNet-Supervised_v1.0).
 
 ## License
 
