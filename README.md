@@ -17,7 +17,7 @@ Implementation of **SegFormer for semantic segmentation of post-flood UAV imager
 
 <p align="center">
   <img src="assets/Fig1.png"
-       width="850"
+       width="600"
        alt="Overview of real-time semantic segmentation for post-flood aerial imagery">
 </p>
 
