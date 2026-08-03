@@ -24,36 +24,27 @@ A clean, reusable implementation of **SegFormer for semantic segmentation of pos
 - Provides a compact [quick-start notebook](segformer_quickstart.ipynb) for implementation and teaching.
 - Connects the code directly to the published real-time FloodNet benchmark.
 
-## Real-Time Flood Segmentation Demo
-
-<p align="center">
-  Side-by-side comparison of the original UAV footage and the corresponding SegFormer prediction.
-</p>
-
-<table>
-  <tr>
-    <th width="50%">Input UAV Footage</th>
-    <th width="50%">SegFormer Prediction</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="assets/mov.gif" width="100%" alt="Input UAV footage">
-    </td>
-    <td align="center">
-      <img src="assets/seg.gif" width="100%" alt="SegFormer prediction">
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <a href="assets/seg.mp4">▶ Watch the high-quality segmentation video</a>
-</p>
-
 ## Study overview
 
 ![Overview of real-time semantic segmentation for post-flood aerial imagery](assets/Fig1.png)
 
 The study evaluates real-time encoder-decoder and multi-pathway semantic-segmentation architectures for rapid analysis of UAV imagery collected after flooding events.
+
+## Real-Time Flood Segmentation Demo
+
+<p align="center">
+  <b>Input UAV Footage (left) — SegFormer Prediction (right)</b>
+</p>
+
+<p align="center">
+  <img src="assets/segformer_comparison.gif"
+       width="900"
+       alt="Synchronized UAV footage and SegFormer prediction">
+</p>
+
+<p align="center">
+  <a href="assets/seg.mp4">▶ Watch the high-quality segmentation video</a>
+</p>
 
 ## FloodNet dataset
 
