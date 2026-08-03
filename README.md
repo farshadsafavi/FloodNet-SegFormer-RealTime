@@ -43,10 +43,6 @@ The study evaluates real-time encoder–decoder and multi-pathway semantic-segme
        alt="Synchronized post-flood UAV footage and SegFormer semantic-segmentation prediction">
 </p>
 
-<p align="center">
-  <a href="assets/seg.mp4">▶ Watch the full-quality segmentation video</a>
-</p>
-
 ## FloodNet dataset
 
 This implementation uses **FloodNet**, a high-resolution UAV imagery dataset collected after Hurricane Harvey for post-flood scene understanding. FloodNet supports image classification, semantic segmentation, and visual question answering.
