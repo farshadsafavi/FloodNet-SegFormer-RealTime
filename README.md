@@ -37,7 +37,7 @@ A clean, reusable implementation of **SegFormer for semantic segmentation of pos
   </tr>
   <tr>
     <td align="center">
-      <img src="assets/mov.png" width="100%" alt="Input UAV footage">
+      <img src="assets/mov.gif" width="100%" alt="Input UAV footage">
     </td>
     <td align="center">
       <img src="assets/seg.gif" width="100%" alt="SegFormer prediction">
