@@ -51,7 +51,7 @@ A clean, reusable implementation of **SegFormer for semantic segmentation of pos
 
 ## Study overview
 
-![Overview of real-time semantic segmentation for post-flood aerial imagery](assets/real_time_segmentation_overview.png)
+![Overview of real-time semantic segmentation for post-flood aerial imagery](assets/Fig1.png)
 
 The study evaluates real-time encoder-decoder and multi-pathway semantic-segmentation architectures for rapid analysis of UAV imagery collected after flooding events.
 
