@@ -45,9 +45,9 @@ The study evaluates real-time encoder–decoder and multi-pathway semantic-segme
 
 ## FloodNet dataset
 
-![Representative FloodNet imagery and semantic labels](assets/dataset.png)
+This implementation uses **FloodNet**, a high-resolution UAV imagery dataset collected after Hurricane Harvey for post-flood scene understanding. FloodNet supports image classification, semantic segmentation, and visual question answering.
 
-FloodNet contains high-resolution post-disaster UAV imagery. Its annotations contain **nine semantic object classes plus background**, represented by ten label IDs:
+For semantic segmentation, the annotations contain **nine object classes plus background**, represented by ten label IDs:
 
 | ID | Class | ID | Class |
 |---:|---|---:|---|
@@ -57,7 +57,12 @@ FloodNet contains high-resolution post-disaster UAV imagery. Its annotations con
 | 3 | Flooded road | 8 | Pool |
 | 4 | Non-flooded road | 9 | Grass |
 
-The dataset is not redistributed in this repository. Download FloodNet separately and organize it as follows:
+The dataset is not redistributed in this repository. Download it from the official FloodNet repository:
+
+- [FloodNet dataset and instructions](https://github.com/BinaLab/FloodNet-Supervised_v1.0)
+- [FloodNet dataset paper](https://doi.org/10.1109/ACCESS.2021.3090981)
+
+After downloading the dataset, organize the images and semantic masks as follows:
 
 ```text
 FloodNet/
@@ -67,7 +72,6 @@ FloodNet/
 └── masks/
     ├── 0001_lab.png
     └── ...
-```
 
 ## Published benchmark
 
