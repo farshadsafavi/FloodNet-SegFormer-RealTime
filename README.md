@@ -1,4 +1,4 @@
-# FloodNet SegFormer: Real-Time Flood-Scene Segmentation
+# FloodNet SegFormer: Real-Time Flood Scene Segmentation
 
 [![Paper](https://img.shields.io/badge/IEEE%20JSTARS-Paper-00629B?logo=ieee)](https://doi.org/10.1109/JSTARS.2022.3219724)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -12,10 +12,10 @@ A clean, reusable implementation of **SegFormer for semantic segmentation of pos
 > *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, vol. 16, pp. 15–31, 2023  
 > [Read the paper](https://doi.org/10.1109/JSTARS.2022.3219724) · [Citation](#citation)
 
-> [!IMPORTANT]
+> [!NOTE]
 > This repository is a **cleaned reimplementation** derived from the original experimental notebooks. It is not an archival copy of the exact environment used to generate the published results.
 
-## Demo
+## Real-time segmentation demo
 
 <p align="center">
   <b>Input UAV footage (left) — SegFormer prediction (right)</b>
@@ -28,8 +28,14 @@ A clean, reusable implementation of **SegFormer for semantic segmentation of pos
 </p>
 
 <p align="center">
-  <a href="assets/seg.mp4">▶ Watch the high-quality segmentation video</a>
+  <a href="assets/seg.mp4">▶ Watch the full-quality segmentation video</a>
 </p>
+
+## Study overview
+
+![Overview of real-time semantic segmentation for post-flood aerial imagery](assets/Fig1.png)
+
+The study evaluates real-time encoder–decoder and multi-pathway semantic-segmentation architectures for rapid analysis of UAV imagery collected after flooding events.
 
 ## Highlights
 
@@ -39,17 +45,11 @@ A clean, reusable implementation of **SegFormer for semantic segmentation of pos
 - Includes a compact [quick-start notebook](segformer_quickstart.ipynb) for learning and adaptation.
 - Connects the implementation directly to the published real-time FloodNet benchmark.
 
-## Study overview
-
-![Overview of real-time semantic segmentation for post-flood aerial imagery](assets/Fig1.png)
-
-The study evaluates real-time encoder–decoder and multi-pathway semantic-segmentation architectures for rapid analysis of UAV imagery collected after flooding events.
-
 ## FloodNet dataset
 
-![Representative FloodNet imagery and semantic labels](assets/floodnet_classes.png)
+![Representative FloodNet imagery and semantic labels](assets/dataset.png)
 
-FloodNet contains high-resolution UAV imagery annotated with ten semantic classes:
+FloodNet contains high-resolution post-disaster UAV imagery. Its annotations contain **nine semantic object classes plus background**, represented by ten label IDs:
 
 | ID | Class | ID | Class |
 |---:|---|---:|---|
@@ -81,9 +81,15 @@ The following test-set result was reported in the 2023 paper. It is provided as 
 
 ### Qualitative comparison
 
-![Qualitative comparison of FloodNet predictions from evaluated real-time models](assets/qualitative_comparison.png)
+![Qualitative comparison of FloodNet predictions from evaluated real-time models](assets/ResAll.png)
 
 The figure compares the ground truth with predictions from the real-time architectures evaluated in the paper. Refer to the [published article](https://doi.org/10.1109/JSTARS.2022.3219724) for the complete experimental protocol, architecture comparison, and per-class results.
+
+### Flood-scene example
+
+![Flood-scene image, ground truth, and semantic-segmentation prediction](assets/FloodedRaod.png)
+
+Example comparison of a flooded scene, its reference annotation, and the model prediction.
 
 ## Installation
 
@@ -143,10 +149,6 @@ FloodNet-SegFormer-RealTime/
 └── README.md
 ```
 
-## Companion repository
-
-The U-Net models with MobileNetV2 and MobileNetV3 encoders evaluated in this study—and introduced in the earlier 2021 comparison—are available in [FloodNet-MobileNet-Segmentation](https://github.com/farshadsafavi/FloodNet-MobileNet-Segmentation).
-
 ## Citation
 
 If you use this repository in academic work, please cite the paper:
@@ -164,6 +166,10 @@ If you use this repository in academic work, please cite the paper:
 ```
 
 GitHub also provides a **Cite this repository** option using [CITATION.cff](CITATION.cff).
+
+## Companion repository
+
+The U-Net models with MobileNetV2 and MobileNetV3 encoders evaluated in this study—and introduced in the earlier 2021 comparison—are available in [FloodNet-MobileNet-Segmentation](https://github.com/farshadsafavi/FloodNet-MobileNet-Segmentation).
 
 ## Acknowledgments
 
