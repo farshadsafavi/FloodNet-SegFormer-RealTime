@@ -1,11 +1,11 @@
-# FloodNet SegFormer: Real-Time Flood Scene Segmentation
+# FloodNet SegFormer: Real-Time and Edge-Efficient Flood Scene Segmentation
 
 [![Paper](https://img.shields.io/badge/IEEE%20JSTARS-Paper-00629B?logo=ieee)](https://doi.org/10.1109/JSTARS.2022.3219724)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-SegFormer-FFD21E)](https://huggingface.co/docs/transformers/model_doc/segformer)
 
-Implementation of **SegFormer for semantic segmentation of post-flood UAV imagery**, based on experiments reported in:
+An implementation of **SegFormer for real-time semantic segmentation of post-flood UAV imagery**, featuring a compact model suitable for further optimization and deployment on edge devices.
 
 > **Comparative Study of Real-Time Semantic Segmentation Networks in Aerial Images During Flooding Events**  
 > Farshad Safavi and Maryam Rahnemoonfar  
@@ -30,6 +30,7 @@ The study evaluates real-time encoder–decoder and multi-pathway semantic-segme
 - Saves the dataset split, experiment configuration, metric history, and best Hugging Face checkpoint.
 - Includes a compact [quick-start notebook](segformer_quickstart.ipynb) for learning and adaptation.
 - Connects the implementation directly to the published real-time FloodNet benchmark.
+- The compact **SegFormer-B0**, with **3.72M parameters**, **19.23G MACs**, and **15.06 ms inference time per image**, is suitable for further optimization and deployment on resource-constrained edge devices.
 
 ## Real-time segmentation demo
 
@@ -74,13 +75,19 @@ FloodNet/
     └── ...
 ```
 
-## Published benchmark
+## Published model comparison
 
-The following test-set result was reported in the 2023 paper. It is provided as a reference benchmark and is not presented as a newly reproduced result from this cleaned implementation.
+The table below presents selected results reported in the 2023 paper. SegFormer-B0 achieved the highest segmentation accuracy while maintaining a compact parameter count and real-time inference.
 
-| Model | Test mIoU | Pixel accuracy |
-|---|---:|---:|
-| **SegFormer-B0** | **61.6%** | **89.5%** |
+| Model | mIoU ↑ | Pixel accuracy ↑ | Parameters ↓ | MACs ↓ | Inference time ↓ |
+|---|---:|---:|---:|---:|---:|
+| BiSeNetV1 | 53.8% | 86.7% | 14.35M | 37.40G | 8.32 ms |
+| DDRNet-23 | 46.1% | 83.3% | 5.73M | 12.96G | **7.32 ms** |
+| UNetFormer | 47.2% | 83.0% | 11.73M | 32.27G | 7.89 ms |
+| HarDNet-70 | 57.9% | 84.8% | 4.12M | **12.56G** | 9.91 ms |
+| **SegFormer-B0** | **61.6%** | **89.5%** | **3.72M** | 19.23G | 15.06 ms |
+
+**SegFormer-B0 achieved the highest mIoU and pixel accuracy among all evaluated models.** Its combination of strong accuracy, only 3.72 million parameters, and real-time inference makes it a promising candidate for further optimization and deployment on resource-constrained edge platforms.
 
 
 ### Flood-scene example
